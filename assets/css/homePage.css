@@ -1,0 +1,15 @@
+html,body{
+	padding:0;
+	margin:0;
+}
+header,footer{
+	background:#15364c;
+}
+.flexBox {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.linkStyle{
+	color: #fff;
+}
