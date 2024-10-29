@@ -2,6 +2,9 @@ html,body{
 	padding:0;
 	margin:0;
 }
+h1,h2,h3,h4{
+    margin: 0;
+}
 header,footer{
 	background:#15364c;
 }
@@ -12,4 +15,47 @@ header,footer{
 }
 .linkStyle{
 	color: #fff;
+}
+.headerCaption{
+	text-align: center;
+	margin: 40px 0;
+}
+header img {
+    margin: auto;
+    display: block;
+    width: 100px;
+}
+.hamBurgerIco{
+    width: 120px;
+}
+.contentSection {
+    background: #ffffff;
+    text-align: center;
+    margin:0px auto;
+    padding:40px 0;
+    display: block;
+}
+.contentSection:nth-child(even) {
+    background: #f9f6f4;
+}
+.contentSection > * {
+    width: 50%;
+    margin: auto;
+}
+.svgContainer label {
+    position: absolute;
+    top: 30%;
+    left: calc(50% - 30px);
+    color: #fff;
+}
+.svgContainer {
+    position: relative;
+}
+.contentSection h2 {
+    color: #15364c;
+    filter: drop-shadow(2px 1px 0px #bfc8ce);
+}
+.contentSection h3 {
+    font-size: 13px;
+    color: #15364c;
 }
