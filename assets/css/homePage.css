@@ -1,12 +1,64 @@
+@font-face{
+    font-family:HVDFonts-Regular;
+    src: url(../fonts/HVDFonts-BrandonGrotesque-Regular.otf);
+}
+@font-face{
+    font-family:Mostardesign-Regular;
+    src: url(../fonts/Mostardesign-SofiaProRegular.otf);
+}
+@font-face{
+    font-family:Mostardesign-Light;
+    src: url(../fonts/Mostardesign-SofiaProLight.otf);
+}
+@font-face{
+    font-family:Raleway-VariableFont_wght;
+    src: url(../fonts/Raleway-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family:Raleway-Regular;
+    src: url(../fonts/Raleway-Regular.otf);
+}
+@font-face{
+    font-family:Raleway-Bold;
+    src: url(../fonts/Raleway-Bold.ttf);
+}
+@font-face{
+    font-family:Raleway-Medium;
+    src: url(../fonts/Raleway-Medium.ttf);
+}
+@font-face{
+    font-family:brandon-grotesque-light-58a8a4b38001d;
+    src: url(../fonts/brandon-grotesque-light-58a8a4b38001d.otf);
+}
+@font-face{
+    font-family:MostardesignMedium;
+    src: url(../fonts/MostardesignMedium.otf);
+}
+@font-face{
+    font-family:Raleway-ExtraBold;
+    src: url(../fonts/Raleway-ExtraBold.ttf);
+}
+@font-face{
+    font-family:PalmerLakePrint;
+    src: url(../fonts/PalmerLakePrint.otf);
+}
 html,body{
-	padding:0;
-	margin:0;
+    padding:0;
+    margin:0;
+}
+html *{
+    font-family: Raleway-Regular;
+    font-weight: normal;
+    font-size: 12px;
+    text-decoration: none;
+    list-style-type: none;
+	outline:none;
 }
 h1,h2,h3,h4{
     margin: 0;
 }
 header,footer{
-	background:#15364c;
+    background:#15364c;
 }
 .flexBox {
     display: flex;
@@ -14,11 +66,23 @@ header,footer{
     color: #fff;
 }
 .linkStyle{
-	color: #fff;
+    letter-spacing: 2px;
+    color: #fff;
+    font-size: 10px;
+    border-bottom: 1px solid #fff;
+    padding: 0px;
+    box-sizing: border-box;
+    height: 14px;
+    font-family: Mostardesign-Light;
 }
 .headerCaption{
-	text-align: center;
-	margin: 40px 0;
+    text-align: center;
+    margin: 40px 0;
+    font-family: Raleway-Bold;
+    font-size: 50px;
+	 background: linear-gradient(to right, #e7e1d9, #edcfcc, #a6c3d2, #cadbe4, #e9e1d7, #edcfcc, #cddbe3, #a6c3d2, #edcfcc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 header img {
     margin: auto;
@@ -27,6 +91,9 @@ header img {
 }
 .hamBurgerIco{
     width: 120px;
+    background: url(../images/hamBurgerIco.svg) no-repeat;
+    background-size: 20px;
+    filter: invert(1);
 }
 .contentSection {
     background: #ffffff;
@@ -47,6 +114,8 @@ header img {
     top: 30%;
     left: calc(50% - 30px);
     color: #fff;
+    font-size: 24px;
+    letter-spacing: 4px;
 }
 .svgContainer {
     position: relative;
@@ -54,8 +123,222 @@ header img {
 .contentSection h2 {
     color: #15364c;
     filter: drop-shadow(2px 1px 0px #bfc8ce);
+    font-family: 'Raleway-Bold';
+    font-size: 24px;
 }
 .contentSection h3 {
     font-size: 13px;
     color: #15364c;
+    font-family: MostardesignMedium;
+    letter-spacing: 1px;
+}
+.contentSection p {
+    font-size: 12px;
+    font-family: 'Mostardesign-Light';
+	color: #80a3b1;
+}
+.btnStyle {
+    font-family: 'MostardesignMedium';
+    border: 0;
+    background: #e8d0cd;
+    border-radius: 4px;
+    padding: 4px 20px;
+    color: #254256;
+    letter-spacing: 1px;
+    width: auto;
+	margin-top:20px;
+	cursor:pointer;
+}
+.svgImg{
+    width:500px;
+}
+.wid200{
+    width:200px;
+}
+.contentSection em{
+    font-family: PalmerLakePrint;
+    color:#2f6079;
+    font-size:20px;
+}
+.flexRow {
+    display: flex;
+    width: 40%;
+    gap: 10px;
+}
+.contentSection .flexRow p{
+    color: #809caa;
+    text-align: left;
+}
+.flexRow .part {
+    width: 33.33%;
+    margin-right: 10px;
+}
+.flexRow .part p {
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Mostardesign-Light';
+}
+.flexRow .part h4 {
+    font-family: 'Raleway-Bold';
+    color: #24445a;
+}
+.singleRow {
+    display: flex;
+}
+
+.singleRow .column {
+    text-align: left;
+}
+.singleRow .column li {
+    margin: 10px;
+    position: relative;
+}
+.singleRow .column li .counter {
+    width: 20px;
+    height: 20px;
+    position:absolute;
+    left: -26px;
+    background: #9fc4d4;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+}
+.flexRow .svgContainer img {
+    width: 200px;
+    height: 200px;
+    border-radius: 7px;
+}
+.wid50,.rowFld .formFld.wid50{
+	width:50%
+}
+.wid50 img{
+	width:100%
+}
+.contentSection h4 {
+    font-family: 'Raleway-Bold';
+    color: #33637b;
+}
+.dotStyleList li {
+    list-style-type: disc;
+    color: #7393a2;
+}
+.rowFld {
+    display: flex;
+    text-align: left;
+    width: 100%;
+	align-items: end;
+}
+.rowFld .formFld {
+    width: calc(33.33% - 20px);
+    display: inline-flex;
+    flex-direction: column;
+    margin-right: 10px;
+	margin-top:15px;
+}
+.rowFld .formFld label {
+    margin-bottom: 5px;
+	color: #467187;
+    font-family: 'MostardesignMedium';
+}
+
+.formFld.wid100 {
+    width: 100%;
+}
+input[type="text"],select,textarea{
+    border-radius: 4px;
+    border: 1px solid #f1f1f1;
+    padding: 5px;
+    color: #c9ccce;
+}
+input[type="text"]::placeholder,textarea::placeholder{
+    color:#c9ccce
+}
+textarea{
+    height:60px;
+    resize:none;
+}
+form .btnStyle {
+    margin-top: 19px;
+    width: 125px;
+}
+footer ul {
+    display: flex;
+    color: #95a4ae;
+    flex-direction: column;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    font-family: ;
+}
+footer ul li {
+    font-family: 'Mostardesign-Light';
+    font-size: 11px;
+}
+footer svg {
+    width: 12px;
+    fill: #95a4ae;
+    float: left;
+}
+
+footer svg:first-of-type {
+    width: 20px;
+}
+
+footer svg:last-of-type {
+    width: 19px;
+    border: 1px solid #95a4ae;
+    border-radius: 6px;
+    padding: 4px;
+    box-sizing: border-box;
+    height: 20px;
+    margin: 2px 0 0 11px;
+}
+.ohLogo {
+    width: 105px;
+    display: block;
+}
+.logoBlk {
+    display: flex;
+    width: 105px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.logoBlk svg {
+    height: 25px;
+}
+.dropIco {
+    border: 15px solid transparent;
+    display: block;
+    margin: auto;
+    width: 0px;
+    border-top-color: #a5c2d0;
+    top: 10px;
+    position: relative;
+}
+.flexRow .part svg {
+    width: 100px;
+    height: 100px;
+}
+svg#management {
+    width: 150px;
+}
+@media only screen and (max-width:1100px){
+	.contentSection > *{
+		width:60%;
+	}
+}
+@media only screen and (max-width:768px){
+	.contentSection > *{
+		width:90%;
+	}
+}
+@media only screen and (max-width:640px){
+	.rowFld{
+	display: block;
+	}
+	.rowFld .formFld,.wid50, .rowFld .formFld.wid50{
+		width:90%;
+	}
 }
